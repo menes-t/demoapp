@@ -38,6 +38,6 @@ def compute():
         print 'yamlInput1: ' + str(yamlInput1)
         print yamlInput1
 
-        result = summary(yamlInput1, input2, input3)
+        result = summary(yamlInput1, int(input2), int(input3))
         print result
         return render_template('compute.html', result=result)
